@@ -2,89 +2,89 @@ Return-Path: <wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org>
 X-Original-To: lists+wcn36xx@lfdr.de
 Delivered-To: lists+wcn36xx@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 3E8D7E985E
-	for <lists+wcn36xx@lfdr.de>; Wed, 30 Oct 2019 09:42:28 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id B4100EAB85
+	for <lists+wcn36xx@lfdr.de>; Thu, 31 Oct 2019 09:24:29 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:MIME-Version:Message-Id:Date:Subject:To
-	:From:Reply-To:Content-ID:Content-Description:Resent-Date:Resent-From:
-	Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:
-	List-Owner; bh=2lLqha6dAA01L638f3tiAWMf/K8siXobYdJhsbRcQJU=; b=sMu5yYSueUu2tU
-	g9lxFe6oXPxFXp6vasE92Bp1c17Jc34aYyj39uBrry58UgC5b+G5pJ1TgGeFXf0AS5OcYavu4/qXB
-	i27JcvN54j0o/37f+9ICfYUWKk+8dav4oWO6SL7QGF8tbJWAVCyvoaDCv211sRF2oLShyGyAa+LxI
-	3Ii19E242cbNWWhcvNSdED0tLb9SGzor0V2fSt6VDQB76DpvMV3O9OKmtgWaTKquYOMAxj5x+5nac
-	aFCNx0cSYsuuHea0Uug+vUkM1I5MgvnC/14DxH36aP7r+Jr8BqROhhFzUNHCfxZy1u/RVhgq8mtp7
-	7Kr47w5Rld4lpJMY5+jw==;
+	List-Archive:List-Unsubscribe:List-Id:Date:Message-Id:To:References:
+	In-Reply-To:From:Subject:MIME-Version:Reply-To:Content-ID:Content-Description
+	:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	List-Owner; bh=+LfedT/Tg6R7drzl/zQmYC6tsizYW03moe7nuK1KkfQ=; b=fr+/ZCNUcDiqXr
+	90NPcp0cqwr92Pbbwnsxe2R2qYO3OvSdMovJ7Okg1vfS/gO6OOydzmSSOw6J8JywchAMXIF+b8E1r
+	KMXdekjLVQGRmpt3bAznUgZDe9Y7HuP1Sl6jC/jdjG1t6sxu5tjbTlnPZsuv/XV7AqQmJpBWrsd2K
+	xvVg/6sJOfrK6Cj+wb4fLNfVcYWveXcNEsp7GpNs6mi0O26IY7X3OqAmT/HTOwajwi1D09xAzVRey
+	pVVoUgz9k3e6lZdU1EosP1+eJVsvWq9W4mNkpS22yZH5lQes9Cf2c7Ad2DffPBxkFlTp3plic4mO9
+	430tCzXLB3m99yEVInGA==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.3 #3 (Red Hat Linux))
-	id 1iPjYE-0003IV-8w; Wed, 30 Oct 2019 08:41:58 +0000
-Received: from mail-wr1-x441.google.com ([2a00:1450:4864:20::441])
+	id 1iQ5k7-0003OE-Hy; Thu, 31 Oct 2019 08:23:43 +0000
+Received: from smtp.codeaurora.org ([198.145.29.96])
  by bombadil.infradead.org with esmtps (Exim 4.92.3 #3 (Red Hat Linux))
- id 1iPjYB-0003HF-Hw
- for wcn36xx@lists.infradead.org; Wed, 30 Oct 2019 08:41:56 +0000
-Received: by mail-wr1-x441.google.com with SMTP id z11so1250872wro.11
- for <wcn36xx@lists.infradead.org>; Wed, 30 Oct 2019 01:41:53 -0700 (PDT)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
- h=from:to:cc:subject:date:message-id:mime-version
- :content-transfer-encoding;
- bh=cryvzLgbDMtwjGhzkRT6/vR7N9p8/gSURlaB37/Qe4Y=;
- b=ZWx36xSw857XGXHgGgMSZS6zlGb8TiDYcRr2BxPiWSNsrmlRDrGcgQuuyi0bp+o8y/
- RRLF8IsK4qaTFnNqV3Bybi7sH0UJeYWyI5ME9lPlwWVdg8i3/mPwgM8/EbhnwQX/Mwcm
- t1Xw3zCBQQ8fV66KV3UIRE8z1GbWFK2jbOAujsEwHICwPnYvLxOmW4CSTwgtl7rjDq31
- sAyAGaH8/l/Lhn/ZQhQrPKSB8ypoWLZcwSR9z0GRHYw57xRLobbqzyuGr2U3kuebO/VN
- 9rokN+q74RHMSbJ2VNbjnQSs2j9f+XrBilP8zfmQ7NbxTw9yA2FWK4RXPNYHBfYnTgr6
- fFzQ==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
- d=1e100.net; s=20161025;
- h=x-gm-message-state:from:to:cc:subject:date:message-id:mime-version
- :content-transfer-encoding;
- bh=cryvzLgbDMtwjGhzkRT6/vR7N9p8/gSURlaB37/Qe4Y=;
- b=chVnzgOsuVh7GwQubyiEh5n7ynkrhvji14tct7xS5VGsB2kVcpQnxirrbmQ+fS3d8F
- DjFxFUdrcylnnxk6ptdMvKr0uXlAcuSwYevWTvCVjOnsgSf9BCKpFM96a9lAoNdyt45W
- Ovxmw3uTguP0vDeIiWgLlSR4R7rix7T6fufHOG32WqOELsEQLJrtb7+WvzEkoGhh0v1H
- ifgMytnQsptMDKzARdacqi7iiE2R9cz/8YvQPzW7KTNx/5Ak8JuxXChEwrueu/i5BGME
- Yw7fAGAwsCERrUJwFw7AwxFD+e7pFuSCGz6hvmFSojol8T4aRsqW9tNqgb1QuOHz90fK
- GnaQ==
-X-Gm-Message-State: APjAAAXP0dDEAcAsEFOjPJTDHKbsh+vpelPhYvIjvivjgPzaDj6X3IdR
- hdDxDtfPsx3KjaLkmdEIBOl0eHKh
-X-Google-Smtp-Source: APXvYqz64GKBUvqLJi68Wu8q0R2zuSfT4XubqAglZMPk0p/s8rw53wezLzfjUGFhN/TrDRvBCS9UGg==
-X-Received: by 2002:a05:6000:1621:: with SMTP id
- v1mr23227554wrb.62.1572424911917; 
- Wed, 30 Oct 2019 01:41:51 -0700 (PDT)
-Received: from localhost.localdomain ([193.27.220.66])
- by smtp.gmail.com with ESMTPSA id b7sm1642225wrn.53.2019.10.30.01.41.50
- (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
- Wed, 30 Oct 2019 01:41:50 -0700 (PDT)
-From: Eduardo Abinader <eduardoabinader@gmail.com>
-To: wcn36xx@lists.infradead.org
-Subject: [PATCH] wcn36xx: remove unecessary return
-Date: Wed, 30 Oct 2019 09:41:41 +0100
-Message-Id: <20191030084141.24009-1-eduardoabinader@gmail.com>
-X-Mailer: git-send-email 2.20.1
+ id 1iQ5k5-0003Nq-4t
+ for wcn36xx@lists.infradead.org; Thu, 31 Oct 2019 08:23:42 +0000
+Received: by smtp.codeaurora.org (Postfix, from userid 1000)
+ id 3256F6092D; Thu, 31 Oct 2019 08:23:39 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org;
+ s=default; t=1572510220;
+ bh=u/tEIgMvNDj9n2naSJiDmKss+gWOoq17J1DfRPDY7iI=;
+ h=Subject:From:In-Reply-To:References:To:Cc:Date:From;
+ b=bZAy/atxK5PKbHuxZ8ae9hYiGBRurUfgpF+y2wx4TElajNjGYoxETAPemwwW4R3VM
+ 6KAp3/6aRkx3VgdweDTnDtIGWQqFFd82DDEuBEPrPa5q7TYH8e0+ne0k8SZxBbrhwX
+ T6Mp3XC/8c2VvwgmrqRq8REHICydRW/Lg/wooido=
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on
+ pdx-caf-mail.web.codeaurora.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.8 required=2.0 tests=ALL_TRUSTED,BAYES_00,
+ DKIM_INVALID,DKIM_SIGNED,MISSING_DATE,MISSING_MID,SPF_NONE autolearn=no
+ autolearn_force=no version=3.4.0
+Received: from potku.adurom.net (88-114-240-156.elisa-laajakaista.fi
+ [88.114.240.156])
+ (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+ (No client certificate requested)
+ (Authenticated sender: kvalo@smtp.codeaurora.org)
+ by smtp.codeaurora.org (Postfix) with ESMTPSA id AC6AE60927;
+ Thu, 31 Oct 2019 08:23:37 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=codeaurora.org;
+ s=default; t=1572510219;
+ bh=u/tEIgMvNDj9n2naSJiDmKss+gWOoq17J1DfRPDY7iI=;
+ h=Subject:From:In-Reply-To:References:To:Cc:From;
+ b=kEv0UHRD4mQJ40q0m6kQqh+KKhIl6OAFDBL0BLHyz/lYXmYWHuLknYzaIrPAFBduw
+ HaRWvThQXE3wEidAy68NyGvnkO9mivGAvAKKuJB3n7nxNSGyZhUPYv34X/ZaMXlgt4
+ nmhx7VwRJpcxPSzZnU4NUqwHjFdS0aUR8r7CGgAA=
+DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org AC6AE60927
+Authentication-Results: pdx-caf-mail.web.codeaurora.org;
+ dmarc=none (p=none dis=none) header.from=codeaurora.org
+Authentication-Results: pdx-caf-mail.web.codeaurora.org;
+ spf=none smtp.mailfrom=kvalo@codeaurora.org
 MIME-Version: 1.0
+Subject: Re: [PATCH] wcn36xx: remove unecessary return
+From: Kalle Valo <kvalo@codeaurora.org>
+In-Reply-To: <20191030084141.24009-1-eduardoabinader@gmail.com>
+References: <20191030084141.24009-1-eduardoabinader@gmail.com>
+To: Eduardo Abinader <eduardoabinader@gmail.com>
+User-Agent: pwcli/0.0.0-git (https://github.com/kvalo/pwcli/) Python/2.7.12
+Message-Id: <20191031082340.3256F6092D@smtp.codeaurora.org>
+Date: Thu, 31 Oct 2019 08:23:39 +0000 (UTC)
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20191030_014155_591057_005AB6F8 
-X-CRM114-Status: UNSURE (   7.55  )
+X-CRM114-CacheID: sfid-20191031_012341_213448_C38AF89C 
+X-CRM114-Status: UNSURE (   4.75  )
 X-CRM114-Notice: Please train this message.
-X-Spam-Score: -0.2 (/)
+X-Spam-Score: -2.5 (--)
 X-Spam-Report: SpamAssassin version 3.4.2 on bombadil.infradead.org summary:
- Content analysis details:   (-0.2 points)
+ Content analysis details:   (-2.5 points)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
- no trust [2a00:1450:4864:20:0:0:0:441 listed in]
- [list.dnswl.org]
+ -2.3 RCVD_IN_DNSWL_MED      RBL: Sender listed at https://www.dnswl.org/,
+ medium trust [198.145.29.96 listed in list.dnswl.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
- provider (eduardoabinader[at]gmail.com)
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
  author's domain
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
  envelope-from domain
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
 X-BeenThere: wcn36xx@lists.infradead.org
 X-Mailman-Version: 2.1.29
@@ -97,33 +97,26 @@ List-Post: <mailto:wcn36xx@lists.infradead.org>
 List-Help: <mailto:wcn36xx-request@lists.infradead.org?subject=help>
 List-Subscribe: <http://lists.infradead.org/mailman/listinfo/wcn36xx>,
  <mailto:wcn36xx-request@lists.infradead.org?subject=subscribe>
-Cc: Eduardo Abinader <eduardoabinader@gmail.com>, kvallo@codeaurora.org,
- linux-wireless@vger.kernel.org
+Cc: wcn36xx@lists.infradead.org, Eduardo Abinader <eduardoabinader@gmail.com>,
+ kvallo@codeaurora.org, linux-wireless@vger.kernel.org
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Sender: "wcn36xx" <wcn36xx-bounces@lists.infradead.org>
 Errors-To: wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org
 
-Signed-off-by: Eduardo Abinader <eduardoabinader@gmail.com>
----
- drivers/net/wireless/ath/wcn36xx/main.c | 2 --
- 1 file changed, 2 deletions(-)
+Eduardo Abinader <eduardoabinader@gmail.com> wrote:
 
-diff --git a/drivers/net/wireless/ath/wcn36xx/main.c b/drivers/net/wireless/ath/wcn36xx/main.c
-index a276dae30887..c30fdd0cbf1e 100644
---- a/drivers/net/wireless/ath/wcn36xx/main.c
-+++ b/drivers/net/wireless/ath/wcn36xx/main.c
-@@ -935,8 +935,6 @@ static void wcn36xx_bss_info_changed(struct ieee80211_hw *hw,
- out:
- 
- 	mutex_unlock(&wcn->conf_mutex);
--
--	return;
- }
- 
- /* this is required when using IEEE80211_HW_HAS_RATE_CONTROL */
+> Signed-off-by: Eduardo Abinader <eduardoabinader@gmail.com>
+> Signed-off-by: Kalle Valo <kvalo@codeaurora.org>
+
+Patch applied to ath-next branch of ath.git, thanks.
+
+6dea30b4fd54 wcn36xx: remove unecessary return
+
 -- 
-2.20.1
+https://patchwork.kernel.org/patch/11219245/
+
+https://wireless.wiki.kernel.org/en/developers/documentation/submittingpatches
 
 
 _______________________________________________
