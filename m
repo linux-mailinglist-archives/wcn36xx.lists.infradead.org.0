@@ -2,82 +2,78 @@ Return-Path: <wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org>
 X-Original-To: lists+wcn36xx@lfdr.de
 Delivered-To: lists+wcn36xx@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id BF808113BA5
-	for <lists+wcn36xx@lfdr.de>; Thu,  5 Dec 2019 07:20:37 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 8CA04113C48
+	for <lists+wcn36xx@lfdr.de>; Thu,  5 Dec 2019 08:24:44 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
-	Content-Transfer-Encoding:Content-Type:List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:MIME-Version:Message-Id:Date:Subject:To
-	:From:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:Resent-From:
-	Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:
-	List-Owner; bh=HlwvMbd0MR+XcFn3gol32BNTP3TZPf1fHelTM7iwXIU=; b=fCnmNCb/X78eUu
-	0tie2XrEaN3xzaKus67U6fCgU9lOuxieNCMxNGVnlmOfI5VOnY2dwcbL1Mc3fxwjsTBjueC7NlBB0
-	O5uNbCWjhrc3pV4lFUuEoS/mY7plmb0YZXVdQQrbjZ/pTzHTBUwPJ8vstKO/+E0CheplsI1i0zJWm
-	4n8VKyovQJ410SLqlZLZeW3SzCfveDjLSK82gWFqit8cLgxwSu25o5LtUqEOJ2ZkL/mD8cqwylXaE
-	WTHKqGh9Wh9hta1Px5zpPmsrhH02UaC/+QHOaNe7LMcAzeqNMMtnGo8pGQ8SHi8KgZ2hLNiLA95cV
-	KfI9/v9GrfzqPIQoJRVg==;
+	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
+	List-Archive:List-Unsubscribe:List-Id:MIME-Version:Message-ID:In-Reply-To:
+	Date:References:Subject:To:From:Reply-To:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	List-Owner; bh=P2j8YYbBOT003ObqN8akIalPBGgBf9csJ276aiGIKHM=; b=HvqS85FGlI+PVK
+	a7lbegPjx5PPSZSsXLP4vTvowGYWHoPjcWAsbasH0NpiAegXjyVF3t781veja7OlcJD+PvxO3DkRp
+	u+RnwOKD79ka6fVx8lupv+2nDMvbhdAs9UQyTFb5HRQfGixcu57LewBybgORrgOXV7aoJaeYRyM4Z
+	oBZnBJ8BCk4He4oGYgwVnBwjjbFkICJZ0LCEnPieFcewudWlffRI33QCLFp6LFCGRmrpWFUmhHVn+
+	F9/WYjzCGcVave6a/cu4VKvt3TkDEDoy0UK++6ZNcMZySrLi9oxTRTfzAZnTvtnAQs6sy4NgSUm0t
+	Slrk+RkoMcQIagWXXepg==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.3 #3 (Red Hat Linux))
-	id 1ickUF-00060D-Cb; Thu, 05 Dec 2019 06:19:39 +0000
-Received: from mail-wm1-x341.google.com ([2a00:1450:4864:20::341])
+	id 1iclUs-0005Si-5a; Thu, 05 Dec 2019 07:24:22 +0000
+Received: from a27-21.smtp-out.us-west-2.amazonses.com ([54.240.27.21])
  by bombadil.infradead.org with esmtps (Exim 4.92.3 #3 (Red Hat Linux))
- id 1ickUC-0005zL-Kh
- for wcn36xx@lists.infradead.org; Thu, 05 Dec 2019 06:19:38 +0000
-Received: by mail-wm1-x341.google.com with SMTP id s14so2293326wmh.4
- for <wcn36xx@lists.infradead.org>; Wed, 04 Dec 2019 22:19:34 -0800 (PST)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
- h=from:to:subject:date:message-id:mime-version
- :content-transfer-encoding;
- bh=6HNLHDibuP2KTpfskWj+zK/A1YenMp0fngAvV6KD1+I=;
- b=NhOdYCsyXrGQMsAoIwYybiLIrQuco7XWyjW6K6mu/P15YlfS10KSIkFjROcz8JVinb
- U5MeG1x88lRfk8KMWZ6ghyqFYVfD55Zo0DbCpN3r1SetVSk5z0ljplu0fapS66y6X2VO
- llWnvikV0KNe7H2hvl53Hy4fPPIF5erW5UAIqfiu7IEGEWFOElarE9VqgyXfYsH+xlPw
- OvJWQjO+ncBBmUtBfXNyRTMVgurZbMVxJTQQ1UXcwjQVhgoeQbMZAysu5JMHziL5Zdst
- unMs1vS+iJXk95VgV0WAJY8rDBYRuKRgZDPjE934e9+S6RY/adqqRUluBiSHIfW4FUwf
- OkQA==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
- d=1e100.net; s=20161025;
- h=x-gm-message-state:from:to:subject:date:message-id:mime-version
- :content-transfer-encoding;
- bh=6HNLHDibuP2KTpfskWj+zK/A1YenMp0fngAvV6KD1+I=;
- b=FZVdNj4mg3VwZ8wMyJLViRzpv3vMd6Dr0F6tTmFhnrqhu+o0poCz/gohHdVYBnFGCJ
- nwDvaQog2WI14xKbqn8kkhZ+4ytmGpaBglQ3DKZJprftv6sVWoFIMtSFTbP8UavQ61GE
- yRvASuRuJ8lufuQlKA1+1EQKnt2eBNyC2edzT7RqM+escqzFpeuzVbw+lZOsbX+dJU5h
- fjn9gNJ4MbrCU0BGctzjix4U3MDsESm3tAz1O5bULAYYELB3PRqt9n6sbAFTK4KwweU4
- W9gmwszZC8zrJlO8Ma7oZtHzZi8aLm7zwPP25wxfXtRld/gJTjXCuApCpkDFdm/s+V6g
- edkQ==
-X-Gm-Message-State: APjAAAXiiZf5E0JNA4I+vN/JB7B1bQ+3dCJksHvEgGRrVeKcamkVlvGh
- GDGTqOOGeVztnd8ZjXz/+Jh6WaRsCZo=
-X-Google-Smtp-Source: APXvYqw0AOQjgJc9qL5zgC9bUVZE2VCOqjEhrjH8m8as7WAW7fhWD5vAuDXY1OKrsDrsgihkOT1DCw==
-X-Received: by 2002:a7b:c1cc:: with SMTP id a12mr3148712wmj.53.1575526768512; 
- Wed, 04 Dec 2019 22:19:28 -0800 (PST)
-Received: from localhost.localdomain ([193.27.220.66])
- by smtp.gmail.com with ESMTPSA id w22sm9286413wmk.34.2019.12.04.22.19.26
- (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
- Wed, 04 Dec 2019 22:19:27 -0800 (PST)
-From: Eduardo Abinader <eduardoabinader@gmail.com>
-To: wcn36xx@lists.infradead.org, linux-wireless@vger.kernel.org,
- kvalo@codeaurora.org
-Subject: [PATCH] wcn36xx: disconnect timeout
-Date: Thu,  5 Dec 2019 07:19:22 +0100
-Message-Id: <20191205061922.1801-1-eduardoabinader@gmail.com>
-X-Mailer: git-send-email 2.20.1
+ id 1iclUj-0005Jj-E0
+ for wcn36xx@lists.infradead.org; Thu, 05 Dec 2019 07:24:14 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+ s=zsmsymrwgfyinv5wlfyidntwsjeeldzt; d=codeaurora.org; t=1575530650;
+ h=From:To:Cc:Subject:References:Date:In-Reply-To:Message-ID:MIME-Version:Content-Type;
+ bh=YvHv2rQuZhCxiYugQZfdChPHWBQ40vbZEq3TjWabN4w=;
+ b=gMpraR0NyC/d4YOjaeKpi+O02z8hSi6BiyY9H9zvEWVbXZ6KLt+KBXLgrW/WKt4C
+ 9zmYgI32nnNlX9gWPamHMKS6hvEIXeBEEniynVfaStB6Skl88piuHtay/QiyYRC7iWB
+ QOmk8AFg9Sy7gP1cKlVab5O3U7K/J67JHnGbCTWI=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+ s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1575530650;
+ h=From:To:Cc:Subject:References:Date:In-Reply-To:Message-ID:MIME-Version:Content-Type:Feedback-ID;
+ bh=YvHv2rQuZhCxiYugQZfdChPHWBQ40vbZEq3TjWabN4w=;
+ b=hdwxzYensLA7ndAo78Q4DhiPNi5jKxCnV+j8sw93mgOIFTO5gsXvNnM6UkaDrO5x
+ wYEf4tq3yHWx/DbmNQtT1nllb1wfw5yFfo0OHSaxEYzW76EMyWw+S19DEVimbG+DS5O
+ KLa3fDMLwdHXX5rbkVaeT/4nZGIPbAEN9/NTgcEI=
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on
+ aws-us-west-2-caf-mail-1.web.codeaurora.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.0 required=2.0 tests=ALL_TRUSTED,SPF_NONE
+ autolearn=ham autolearn_force=no version=3.4.0
+DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org 78FC3C447AD
+Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org;
+ dmarc=none (p=none dis=none) header.from=codeaurora.org
+Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org;
+ spf=none smtp.mailfrom=kvalo@codeaurora.org
+From: Kalle Valo <kvalo@codeaurora.org>
+To: Eduardo Abinader <eduardoabinader@gmail.com>
+Subject: Re: [PATCH] wcn36xx: disconnect timeout
+References: <20191205061922.1801-1-eduardoabinader@gmail.com>
+Date: Thu, 5 Dec 2019 07:24:10 +0000
+In-Reply-To: <20191205061922.1801-1-eduardoabinader@gmail.com> (Eduardo
+ Abinader's message of "Thu, 5 Dec 2019 07:19:22 +0100")
+Message-ID: <0101016ed4f1d991-016e34cd-1541-4447-b904-20c1b319cf59-000000@us-west-2.amazonses.com>
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/24.5 (gnu/linux)
 MIME-Version: 1.0
+X-SES-Outgoing: 2019.12.05-54.240.27.21
+Feedback-ID: 1.us-west-2.CZuq2qbDmUIuT3qdvXlRHZZCpfZqZ4GtG9v3VKgRyF0=:AmazonSES
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20191204_221936_681101_632782B1 
-X-CRM114-Status: GOOD (  10.35  )
-X-Spam-Score: -0.2 (/)
+X-CRM114-CacheID: sfid-20191204_232413_626117_AE3E136E 
+X-CRM114-Status: UNSURE (   8.09  )
+X-CRM114-Notice: Please train this message.
+X-Spam-Score: 0.1 (/)
 X-Spam-Report: SpamAssassin version 3.4.2 on bombadil.infradead.org summary:
- Content analysis details:   (-0.2 points)
+ Content analysis details:   (0.1 points)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
- no trust [2a00:1450:4864:20:0:0:0:341 listed in]
- [list.dnswl.org]
+ no trust [54.240.27.21 listed in list.dnswl.org]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
- provider (eduardoabinader[at]gmail.com)
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+ mail domains are different
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
  author's domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
@@ -96,113 +92,30 @@ List-Post: <mailto:wcn36xx@lists.infradead.org>
 List-Help: <mailto:wcn36xx-request@lists.infradead.org?subject=help>
 List-Subscribe: <http://lists.infradead.org/mailman/listinfo/wcn36xx>,
  <mailto:wcn36xx-request@lists.infradead.org?subject=subscribe>
+Cc: wcn36xx@lists.infradead.org, linux-wireless@vger.kernel.org
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Sender: "wcn36xx" <wcn36xx-bounces@lists.infradead.org>
 Errors-To: wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org
 
-Whenever the signal stregth decays smoothly and physical connnection
-is already gone and no deauth has arrived, the qcom soc is not
-able to indicate neither WCN36XX_HAL_MISSED_BEACON_IND nor
-WCN36XX_HAL_MISSED_BEACON_IND. It was noticed that such situation gets
-even more reproducible, when the driver fails to enter bmps mode - which is
-highly likely to occur. Thus, in order to provide proper disconnection
-of the connected STA, a disconnection timeout based on last time seen
-bss beacon is here given.
+Eduardo Abinader <eduardoabinader@gmail.com> writes:
 
-Signed-off-by: Eduardo Abinader <eduardoabinader@gmail.com>
----
- drivers/net/wireless/ath/wcn36xx/txrx.c    | 34 ++++++++++++++++++++++
- drivers/net/wireless/ath/wcn36xx/txrx.h    |  2 ++
- drivers/net/wireless/ath/wcn36xx/wcn36xx.h |  2 ++
- 3 files changed, 38 insertions(+)
+> Whenever the signal stregth decays smoothly and physical connnection
+> is already gone and no deauth has arrived, the qcom soc is not
+> able to indicate neither WCN36XX_HAL_MISSED_BEACON_IND nor
+> WCN36XX_HAL_MISSED_BEACON_IND. It was noticed that such situation gets
+> even more reproducible, when the driver fails to enter bmps mode - which is
+> highly likely to occur. Thus, in order to provide proper disconnection
+> of the connected STA, a disconnection timeout based on last time seen
+> bss beacon is here given.
+>
+> Signed-off-by: Eduardo Abinader <eduardoabinader@gmail.com>
 
-diff --git a/drivers/net/wireless/ath/wcn36xx/txrx.c b/drivers/net/wireless/ath/wcn36xx/txrx.c
-index a6902371e89c..98155b2115e0 100644
---- a/drivers/net/wireless/ath/wcn36xx/txrx.c
-+++ b/drivers/net/wireless/ath/wcn36xx/txrx.c
-@@ -23,11 +23,30 @@ static inline int get_rssi0(struct wcn36xx_rx_bd *bd)
- 	return 100 - ((bd->phy_stat0 >> 24) & 0xff);
- }
- 
-+static inline void rx_check(struct timer_list *t) {
-+	struct wcn36xx *wcn = from_timer(wcn, t, rx_timer);
-+	struct ieee80211_vif *vif = NULL;
-+	struct wcn36xx_vif *tmp;
-+
-+	list_for_each_entry(tmp, &wcn->vif_list, list) {
-+			vif = wcn36xx_priv_to_vif(tmp);
-+			if (vif && vif->bss_conf.assoc) {
-+				wcn36xx_warn("no beacons seen - disconnect timeout\n");
-+
-+				ieee80211_connection_loss(vif);
-+				del_timer(&wcn->rx_timer);
-+				wcn->rx_timer.function = NULL;
-+			}
-+	}
-+}
-+
- int wcn36xx_rx_skb(struct wcn36xx *wcn, struct sk_buff *skb)
- {
- 	struct ieee80211_rx_status status;
- 	struct ieee80211_hdr *hdr;
- 	struct wcn36xx_rx_bd *bd;
-+	struct ieee80211_vif *vif = NULL;
-+	struct wcn36xx_vif *tmp;
- 	u16 fc, sn;
- 
- 	/*
-@@ -77,6 +96,21 @@ int wcn36xx_rx_skb(struct wcn36xx *wcn, struct sk_buff *skb)
- 			    skb, skb->len, fc, sn);
- 		wcn36xx_dbg_dump(WCN36XX_DBG_BEACON_DUMP, "SKB <<< ",
- 				 (char *)skb->data, skb->len);
-+
-+		list_for_each_entry(tmp, &wcn->vif_list, list) {
-+			vif = wcn36xx_priv_to_vif(tmp);
-+			if (vif && vif->bss_conf.assoc &&
-+				ether_addr_equal(hdr->addr2, vif->bss_conf.bssid)) {
-+					del_timer(&wcn->rx_timer);
-+					wcn->rx_timer.function = NULL;
-+
-+					wcn->rx_timer.expires = jiffies +
-+											msecs_to_jiffies(RX_TIMEOUT);
-+					timer_setup(&wcn->rx_timer, rx_check, 0);
-+					add_timer(&wcn->rx_timer);
-+				}
-+		}
-+
- 	} else {
- 		wcn36xx_dbg(WCN36XX_DBG_RX, "rx skb %p len %d fc %04x sn %d\n",
- 			    skb, skb->len, fc, sn);
-diff --git a/drivers/net/wireless/ath/wcn36xx/txrx.h b/drivers/net/wireless/ath/wcn36xx/txrx.h
-index 032216e82b2b..f6b07cba165a 100644
---- a/drivers/net/wireless/ath/wcn36xx/txrx.h
-+++ b/drivers/net/wireless/ath/wcn36xx/txrx.h
-@@ -32,6 +32,8 @@
- #define WCN36XX_BD_RATE_MGMT 2
- #define WCN36XX_BD_RATE_CTRL 3
- 
-+#define RX_TIMEOUT 30000
-+
- enum wcn36xx_txbd_ssn_type {
- 	WCN36XX_TXBD_SSN_FILL_HOST = 0,
- 	WCN36XX_TXBD_SSN_FILL_DPU_NON_QOS = 1,
-diff --git a/drivers/net/wireless/ath/wcn36xx/wcn36xx.h b/drivers/net/wireless/ath/wcn36xx/wcn36xx.h
-index a58f313983b9..a9cfb817fab7 100644
---- a/drivers/net/wireless/ath/wcn36xx/wcn36xx.h
-+++ b/drivers/net/wireless/ath/wcn36xx/wcn36xx.h
-@@ -254,6 +254,8 @@ struct wcn36xx {
- 	struct wcn36xx_dfs_entry    dfs;
- #endif /* CONFIG_WCN36XX_DEBUGFS */
- 
-+	struct timer_list rx_timer;
-+
- };
- 
- static inline bool wcn36xx_is_fw_version(struct wcn36xx *wcn,
+Wouldn't it be better to disable IEEE80211_HW_CONNECTION_MONITOR and let
+mac80211 handle it entirely?
+
 -- 
-2.20.1
-
+https://wireless.wiki.kernel.org/en/developers/documentation/submittingpatches
 
 _______________________________________________
 wcn36xx mailing list
