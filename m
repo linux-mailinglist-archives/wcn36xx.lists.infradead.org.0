@@ -2,74 +2,78 @@ Return-Path: <wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org>
 X-Original-To: lists+wcn36xx@lfdr.de
 Delivered-To: lists+wcn36xx@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6BCF3122DF3
-	for <lists+wcn36xx@lfdr.de>; Tue, 17 Dec 2019 15:06:02 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id EC598122E3C
+	for <lists+wcn36xx@lfdr.de>; Tue, 17 Dec 2019 15:13:11 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
-	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:To:Subject:Message-ID:Date:From:
-	In-Reply-To:References:MIME-Version:Reply-To:Content-ID:Content-Description:
-	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
-	List-Owner; bh=pnNqg/zoxr8mwND6t5qVC1DSoEno+OXuWM747+bMEK0=; b=tS8XSq3MF4AfDF
-	WvCOruLG7ul7rtzOyvSEh2B0Y3aF5o4tDMyw4sKdrsjKyHfeEh6AiFhpAoyLpox8mk1Yb5OIUlP25
-	fts6i16wtC2mxSWoDZeDsvoCSgP3A3a/pu6BI6pBeAlWDatP/uOAzQctW4Gqr4tE50w7C5af4fiBb
-	OrMK79RZAkJNG+FxDtibMtmJSdReCn3aYzwXAHxQcEJ3cZnbtqSDw6sXr65I/Yae4K5LND50ekigw
-	lT+0RPQBw1sPrUELbmUkzjJvyKlfitT6sDpWhfYHKcsGiOqJJxwmLTZOLathN05cI9wofuXfYSzGq
-	vvnmlLzCUmdpn2XHyflg==;
+	Content-Transfer-Encoding:Content-Type:List-Subscribe:List-Help:List-Post:
+	List-Archive:List-Unsubscribe:List-Id:MIME-Version:Message-Id:Date:Subject:To
+	:From:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:Resent-From:
+	Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:
+	List-Owner; bh=7Wf3hQiDU85tSgOzgFEHqQPeBdxHgrXprDnIU29ImOg=; b=MnGmalNIRlFLql
+	VnMSwSeiGQq6rGzgsMnAfDHCtyQEniWXLQAyOF7+QLNLeFd4N9vsH1liOthoFkPVDqIHmDRDIJUCv
+	CFfNv6rxneUnhuzBRQ9sO622LXRpE92ScsMvfWiZ+lEL6eDx65OuYke+d3mcT8jlogDCtcpTwn726
+	bkcMokVVuMoJmuCISgQ8D5VKXYb2AOCR0hf6axhe4CWOgSuN+EsWoBJQ7suUaRBtgTlH1r0nqZVHx
+	PMKcn60DUdAlDYkQs8okscNpo56qgyyzz/ysZU2CLZkI/mC8lK8YaROAdJVRAn0kMWK+tTHa01Xfy
+	+hYZ8EBGA2XdIH3oA7Dg==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.3 #3 (Red Hat Linux))
-	id 1ihDTo-0005hN-VH; Tue, 17 Dec 2019 14:05:40 +0000
-Received: from mail-lj1-x243.google.com ([2a00:1450:4864:20::243])
+	id 1ihDas-0008Q0-1A; Tue, 17 Dec 2019 14:12:58 +0000
+Received: from mail-wr1-x441.google.com ([2a00:1450:4864:20::441])
  by bombadil.infradead.org with esmtps (Exim 4.92.3 #3 (Red Hat Linux))
- id 1ihDTm-0005gr-Hp
- for wcn36xx@lists.infradead.org; Tue, 17 Dec 2019 14:05:39 +0000
-Received: by mail-lj1-x243.google.com with SMTP id r19so11090166ljg.3
- for <wcn36xx@lists.infradead.org>; Tue, 17 Dec 2019 06:05:38 -0800 (PST)
+ id 1ihDap-0008PY-5i
+ for wcn36xx@lists.infradead.org; Tue, 17 Dec 2019 14:12:56 +0000
+Received: by mail-wr1-x441.google.com with SMTP id w15so11485816wru.4
+ for <wcn36xx@lists.infradead.org>; Tue, 17 Dec 2019 06:12:54 -0800 (PST)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
- h=mime-version:references:in-reply-to:from:date:message-id:subject:to
- :cc; bh=a8f3Bpq6dFoGf8pYbLbjxw846b7BaA25DVfJ6Nk16sc=;
- b=YlWv4l3cvCBom1ZjEksgQv2qzCt2Jd0OoZin9Npb73ERISkEQAocWKtHJilag6iOrX
- goaxcROUc+rmbSf+fo1r61jsVRGPze1Az1OZGsiyW6K+I/jo32k/e+eCb4nJoOTzZQZ3
- wykECaBVLpeqA6ovKInzbNwherieK+HrXKOKlqKulMK+BXMzWRuWm+jNosKgoWUBjmno
- 6F2kDGMi17CaI+Io0qjbic9Ufxi0YKFaylEr3yVOHQbEn9vJfXxaX2UmztFIv56ZxzZB
- asAODUfm6EWkdjVuxWfB0aKaDCvxonjFctdoJqBBaOEdunNCfgFr7Au4l5bjiQZadMnR
- D8Vw==
+ h=from:to:subject:date:message-id:mime-version
+ :content-transfer-encoding;
+ bh=1IEBfeiXWdSeAPu3kBBy1VziKqf2hShqp/AAgg9MEEg=;
+ b=uhbkVDF1WLNp6mi572XKAcmSWTT8EOCf1JSIjSDXGo+kOAoNzYhvAXZHSNzU1GCRBC
+ DZD1k9NV3AnfZ1USp2CU1RDGm5YhNRIYJnk60kLPZjUbj2EWHflIYuqlPryp2H6XAl2F
+ 2oqXD3FJq8cVW7t3NvfQKO6iD1CG2CYMV94UByBBc3LDw500321NWbl/spkN3SbzbEV0
+ XarK4FtHQGysIFsTXLtvGlgYwq0/Ain2SJdIxaHt4stbYUZ4KISiqSlzmq+0iCNUiPDk
+ Wou72za3hFZSTW2e60lFKMKCb5DpwU2nJ9rVJFtpjUeyFshssL0sdTaxPWXfcuYJrjMJ
+ 9OFQ==
 X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
  d=1e100.net; s=20161025;
- h=x-gm-message-state:mime-version:references:in-reply-to:from:date
- :message-id:subject:to:cc;
- bh=a8f3Bpq6dFoGf8pYbLbjxw846b7BaA25DVfJ6Nk16sc=;
- b=sUyruj+JwM8A9MxKDkysMM31IJjH7ld7hEUSz9cpmxYaMEmfSZKyXGViNFon6TDFqb
- Gv9hYiB7rNsP8eHNb497H3IJj0l7NW1QGNXJVcEm17NmWuEuaKlXIs4D3tvy0PwLF+wm
- 53MdUanWNP6y/xRdMTRw4ITtfCsXxm8TEbpEK1hOgDFfb/CGlH5k+XK0GWe1VfZei8rz
- 0ZbiaEGCQNJeG4YbkXSOfKDMf2wq0JVWp8J/mfqmB5BNINdPSVfACLs9oFc5beTtOA1y
- Hx0HIK3sRLOqkZhgYW905y63Lsa6EfU++39Uu4cWWpUeE6GDzQ1rGIljLqgGcDL2u6DR
- KwIg==
-X-Gm-Message-State: APjAAAWfyqZoXNAFsbCwULLhB1BPwBjTw93jalobeKaAvjjTwqQ62ue4
- /xJ+OrdJ1u48X3NgYQn/OTsaGukBCxSn728ra14NnAP0
-X-Google-Smtp-Source: APXvYqz1nyuAC4GOKP9YL55S219dezJuQ79pjaZJZl2egNjjMOVt0QOXOvRGOQnl1FG1kZ/db035gOoLF1RIBSZd0sk=
-X-Received: by 2002:a2e:b0c4:: with SMTP id g4mr3286033ljl.83.1576591536918;
- Tue, 17 Dec 2019 06:05:36 -0800 (PST)
-MIME-Version: 1.0
-References: <20191205061922.1801-1-eduardoabinader@gmail.com>
- <0101016ed4f1db3a-e6a9458a-676e-48b1-bf5b-120a4a8d4ab7-000000@us-west-2.amazonses.com>
- <CAGoNHngJQteebGkq2dwofhm819xD9u=zTgFD0xV4WfbgiwR+AQ@mail.gmail.com>
-In-Reply-To: <CAGoNHngJQteebGkq2dwofhm819xD9u=zTgFD0xV4WfbgiwR+AQ@mail.gmail.com>
+ h=x-gm-message-state:from:to:subject:date:message-id:mime-version
+ :content-transfer-encoding;
+ bh=1IEBfeiXWdSeAPu3kBBy1VziKqf2hShqp/AAgg9MEEg=;
+ b=oj0WApvETyF75CmGNk3D2ZMv7tyUr36PEbzlM/Bz9jcs3lmOD5yKnlfaS5sLv/F0el
+ Dxj6/NWMcuqqKdIVZ9kW1YeG7+H3CeOnoEjbW7s7SupiVuWwqX71shb8RZOp6TYp8jgw
+ aew/L8TA6sh04+Fn/TfDTOqXSvVhSL0Uf3m/SxuRHws0uvgK3DxJs6t/Aq6HTBRj3X9d
+ zquvA66Tr/2W2Bd15G0tqgD7MeAWGquLp/m8yMywu51mamV437brALfRKOlPkpBcNTAM
+ HeE+5fEyHooNfG88vtgUIHRaXL2OK7juU73CGlLRR6RweL5hdgkfAJO67UNQYr/QGx4j
+ eCQQ==
+X-Gm-Message-State: APjAAAXrirzOdrx+awiLbHgZgAY22Z9YbvuKMBpedy4WgZ7TBVxM6TDk
+ pAQrDVwV0b20EY0ow6MMix8=
+X-Google-Smtp-Source: APXvYqws4A5aPc013BltYGN7FQTg3PdMCtevd6Q1iD8LtbGnUeJ+Dd7Evr+MVyu4BtMf376vHzAvwg==
+X-Received: by 2002:a5d:6b88:: with SMTP id n8mr38701062wrx.288.1576591973447; 
+ Tue, 17 Dec 2019 06:12:53 -0800 (PST)
+Received: from localhost.localdomain ([193.27.220.66])
+ by smtp.gmail.com with ESMTPSA id b15sm3078922wmj.13.2019.12.17.06.12.52
+ (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+ Tue, 17 Dec 2019 06:12:52 -0800 (PST)
 From: Eduardo Abinader <eduardoabinader@gmail.com>
-Date: Tue, 17 Dec 2019 15:05:26 +0100
-Message-ID: <CAGoNHnixgDE3mm=8AhUXye0SoPRuuGB48Pzh1vm-r1VphxGyxA@mail.gmail.com>
-Subject: Re: [PATCH] wcn36xx: disconnect timeout
-To: Kalle Valo <kvalo@codeaurora.org>
+To: linux-wireless@vger.kernel.org, wcn36xx@lists.infradead.org,
+ kvalo@codeaurora.org
+Subject: [PATCH] wcn36xx: disable HW_CONNECTION_MONITOR
+Date: Tue, 17 Dec 2019 15:12:47 +0100
+Message-Id: <20191217141247.14387-1-eduardoabinader@gmail.com>
+X-Mailer: git-send-email 2.20.1
+MIME-Version: 1.0
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20191217_060538_590724_8EE13A40 
-X-CRM114-Status: GOOD (  10.95  )
+X-CRM114-CacheID: sfid-20191217_061255_243013_7CE68D9E 
+X-CRM114-Status: UNSURE (   8.53  )
+X-CRM114-Notice: Please train this message.
 X-Spam-Score: -0.2 (/)
 X-Spam-Report: SpamAssassin version 3.4.2 on bombadil.infradead.org summary:
  Content analysis details:   (-0.2 points)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
- no trust [2a00:1450:4864:20:0:0:0:243 listed in]
+ no trust [2a00:1450:4864:20:0:0:0:441 listed in]
  [list.dnswl.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
@@ -93,48 +97,39 @@ List-Post: <mailto:wcn36xx@lists.infradead.org>
 List-Help: <mailto:wcn36xx-request@lists.infradead.org?subject=help>
 List-Subscribe: <http://lists.infradead.org/mailman/listinfo/wcn36xx>,
  <mailto:wcn36xx-request@lists.infradead.org?subject=subscribe>
-Cc: wcn36xx@lists.infradead.org, linux-wireless@vger.kernel.org
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Sender: "wcn36xx" <wcn36xx-bounces@lists.infradead.org>
 Errors-To: wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org
 
-Thanks for the hint, Kalle.
+Whenever the signal stregth decays smoothly and physical connnection
+is already gone and no deauth has arrived, the qcom soc is not
+able to indicate neither WCN36XX_HAL_MISSED_BEACON_IND nor
+WCN36XX_HAL_MISSED_BEACON_IND. It was noticed that such situation gets
+even more reproducible, when the driver fails to enter bmps mode - which is
+highly likely to occur. Thus, in order to provide proper disconnection
+of the connected STA, let mac80211 handle it, instead of wcn3xx driver.
 
-The disconnection procedure seems more steady by delegating it to mac80211.
-I'm gonna send a patch with such change then.
+Signed-off-by: Eduardo Abinader <eduardoabinader@gmail.com>
+---
+ drivers/net/wireless/ath/wcn36xx/main.c | 1 -
+ 1 file changed, 1 deletion(-)
 
+diff --git a/drivers/net/wireless/ath/wcn36xx/main.c b/drivers/net/wireless/ath/wcn36xx/main.c
+index c30fdd0cbf1e..e49c306e0eef 100644
+--- a/drivers/net/wireless/ath/wcn36xx/main.c
++++ b/drivers/net/wireless/ath/wcn36xx/main.c
+@@ -1169,7 +1169,6 @@ static int wcn36xx_init_ieee80211(struct wcn36xx *wcn)
+ 
+ 	ieee80211_hw_set(wcn->hw, TIMING_BEACON_ONLY);
+ 	ieee80211_hw_set(wcn->hw, AMPDU_AGGREGATION);
+-	ieee80211_hw_set(wcn->hw, CONNECTION_MONITOR);
+ 	ieee80211_hw_set(wcn->hw, SUPPORTS_PS);
+ 	ieee80211_hw_set(wcn->hw, SIGNAL_DBM);
+ 	ieee80211_hw_set(wcn->hw, HAS_RATE_CONTROL);
+-- 
+2.20.1
 
-On Tue, 17 Dec 2019 at 15:03, Eduardo Abinader
-<eduardoabinader@gmail.com> wrote:
->
-> Thanks for the hint, Kalle.
->
-> The disconnection procedure seems more steady by delegating it to mac80211.
-> I'm gonna send a patch with such change then.
->
->
->
-> On Thu, 5 Dec 2019 at 08:24, Kalle Valo <kvalo@codeaurora.org> wrote:
->>
->> Eduardo Abinader <eduardoabinader@gmail.com> writes:
->>
->> > Whenever the signal stregth decays smoothly and physical connnection
->> > is already gone and no deauth has arrived, the qcom soc is not
->> > able to indicate neither WCN36XX_HAL_MISSED_BEACON_IND nor
->> > WCN36XX_HAL_MISSED_BEACON_IND. It was noticed that such situation gets
->> > even more reproducible, when the driver fails to enter bmps mode - which is
->> > highly likely to occur. Thus, in order to provide proper disconnection
->> > of the connected STA, a disconnection timeout based on last time seen
->> > bss beacon is here given.
->> >
->> > Signed-off-by: Eduardo Abinader <eduardoabinader@gmail.com>
->>
->> Wouldn't it be better to disable IEEE80211_HW_CONNECTION_MONITOR and let
->> mac80211 handle it entirely?
->>
->> --
->> https://wireless.wiki.kernel.org/en/developers/documentation/submittingpatches
 
 _______________________________________________
 wcn36xx mailing list
