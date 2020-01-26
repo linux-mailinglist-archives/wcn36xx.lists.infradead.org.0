@@ -2,57 +2,84 @@ Return-Path: <wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org>
 X-Original-To: lists+wcn36xx@lfdr.de
 Delivered-To: lists+wcn36xx@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id C3B1F14601D
-	for <lists+wcn36xx@lfdr.de>; Thu, 23 Jan 2020 01:51:33 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id EC782149B2A
+	for <lists+wcn36xx@lfdr.de>; Sun, 26 Jan 2020 15:41:15 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:MIME-Version:Message-Id:Date:Subject:To
-	:From:Reply-To:Content-ID:Content-Description:Resent-Date:Resent-From:
-	Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:
-	List-Owner; bh=KnHqb5ImBwgF/JMRbduJk4U7uySIEhAKoBdYUyl4LxU=; b=eYL4Xr7v7RLbLt
-	5AbBV0go9LYLHfHGz64j7Y+z47v5a8IcsIDY3QNAmhoCoHCeRpf7rhDfJxwJP/PDH/789rZOv4hdu
-	3pMijkmyJ98jNPqaPmHtv6Cp5HKhDvKQMqJMyhL+E8I7C1ZD+ntnB+8uUkNXm6+0LXoWgpWGxwP6P
-	SA3VYU2gM245coWWyukgsPt1cVF4R0tfwSVgrlhv0YE6W0+KQQYh05RuWVTD/PvqOxXxrwX85/wee
-	X8rUv3Q16ykSNifpBKs22dRybeMQ6jIzD/t93nWf91SQ7sUReG4PmGXw8KyrHZTkZaCJFBNkGdaRP
-	B13sH894HkFtfF96HlgA==;
+	List-Archive:List-Unsubscribe:List-Id:Date:Message-Id:To:References:
+	In-Reply-To:From:Subject:MIME-Version:Reply-To:Content-ID:Content-Description
+	:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	List-Owner; bh=Y1xu92dQ0fgKR8KE81tdh/paf+XaeT2Z6oJcPt17qV8=; b=fB3ICtBItPR8Ip
+	EpUT9ZS0RCX3Iljqg55DnZ1sjmeBOUIWEEBNC/TtmpM5bvK8McF2coItw7RO8O6fHlVpSD4p5Byhw
+	v9Q4fJHdzWDN6WX6bK+DNXgbKmpoumHdAtM+kNe37HNkeIoL3KS4eVP+ylXyqqH+Z4FxHn225hiOd
+	MULOZcWlvjT/9t460ymuVDQeHVElG3SYfduqUG33lTBV6NxaAXfRSkE967UOK5t7tz38fgxGSnKvp
+	UqYMPn7tk70zDUx/T542r5uG6cP5o+skSmuOuKAqsg4y8wH0ppH6dde12qq2JU9epROQOaLsCmxyr
+	SmA6deps5rsdPYNELPdw==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.3 #3 (Red Hat Linux))
-	id 1iuQiS-0000Gb-49; Thu, 23 Jan 2020 00:51:24 +0000
-Received: from youngberry.canonical.com ([91.189.89.112])
+	id 1ivj5p-0004GE-Sj; Sun, 26 Jan 2020 14:40:53 +0000
+Received: from mail26.static.mailgun.info ([104.130.122.26])
  by bombadil.infradead.org with esmtps (Exim 4.92.3 #3 (Red Hat Linux))
- id 1iuQiP-0000GI-Lq
- for wcn36xx@lists.infradead.org; Thu, 23 Jan 2020 00:51:22 +0000
-Received: from [82.43.126.140] (helo=localhost)
- by youngberry.canonical.com with esmtpsa
- (TLS1.2:ECDHE_RSA_AES_128_GCM_SHA256:128) (Exim 4.86_2)
- (envelope-from <colin.king@canonical.com>)
- id 1iuQiL-00072x-Tt; Thu, 23 Jan 2020 00:51:18 +0000
-From: Colin King <colin.king@canonical.com>
-To: gKalle Valo <kvalo@codeaurora.org>,
- "David S . Miller" <davem@davemloft.net>, wcn36xx@lists.infradead.org,
- linux-wireless@vger.kernel.org, netdev@vger.kernel.org
-Subject: [PATCH] wcn36xx: rockchip: fix spelling mistake "to" -> "too"
-Date: Thu, 23 Jan 2020 00:51:17 +0000
-Message-Id: <20200123005117.2833765-1-colin.king@canonical.com>
-X-Mailer: git-send-email 2.24.0
+ id 1ivj5m-0004FD-RK
+ for wcn36xx@lists.infradead.org; Sun, 26 Jan 2020 14:40:52 +0000
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.codeaurora.org;
+ q=dns/txt; 
+ s=smtp; t=1580049650; h=Date: Message-Id: Cc: To: References:
+ In-Reply-To: From: Subject: Content-Transfer-Encoding: MIME-Version:
+ Content-Type: Sender; bh=9sMjeGzVmtWR/JgOPqhY5RyLWmR/C12M4XwDVCgFpws=;
+ b=c37gZmAsB63GHsjUdIZtJ1S3ObKPHsNiDfaixMt3DyIldeewUgn7F1o31WsFDR6vxkto5Mtp
+ 81zXATiAdc6ZTu13iQ9vc10G11afvBeZ/voWlRvDK44ASyP5AhKoiZDnyR6fc83HoYlTSMp5
+ b74UY5KcrXcdVz5BrdqMum3Iqk8=
+X-Mailgun-Sending-Ip: 104.130.122.26
+X-Mailgun-Sid: WyIwNjU2ZSIsICJ3Y24zNnh4QGxpc3RzLmluZnJhZGVhZC5vcmciLCAiYmU5ZTRhIl0=
+Received: from smtp.codeaurora.org
+ (ec2-35-166-182-171.us-west-2.compute.amazonaws.com [35.166.182.171])
+ by mxa.mailgun.org with ESMTP id 5e2da4ec.7faefc5fc180-smtp-out-n03;
+ Sun, 26 Jan 2020 14:40:44 -0000 (UTC)
+Received: by smtp.codeaurora.org (Postfix, from userid 1001)
+ id 314A3C4479F; Sun, 26 Jan 2020 14:40:44 +0000 (UTC)
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on
+ aws-us-west-2-caf-mail-1.web.codeaurora.org
+X-Spam-Level: 
+X-Spam-Status: No, score=0.5 required=2.0 tests=ALL_TRUSTED,MISSING_DATE,
+ MISSING_MID,SPF_NONE autolearn=no autolearn_force=no version=3.4.0
+Received: from potku.adurom.net (88-114-240-156.elisa-laajakaista.fi
+ [88.114.240.156])
+ (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+ (No client certificate requested) (Authenticated sender: kvalo)
+ by smtp.codeaurora.org (Postfix) with ESMTPSA id 138E0C43383;
+ Sun, 26 Jan 2020 14:40:41 +0000 (UTC)
+DMARC-Filter: OpenDMARC Filter v1.3.2 smtp.codeaurora.org 138E0C43383
+Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org;
+ dmarc=none (p=none dis=none) header.from=codeaurora.org
+Authentication-Results: aws-us-west-2-caf-mail-1.web.codeaurora.org;
+ spf=none smtp.mailfrom=kvalo@codeaurora.org
 MIME-Version: 1.0
+Subject: Re: [PATCH] wcn36xx: rockchip: fix spelling mistake "to" -> "too"
+From: Kalle Valo <kvalo@codeaurora.org>
+In-Reply-To: <20200123005117.2833765-1-colin.king@canonical.com>
+References: <20200123005117.2833765-1-colin.king@canonical.com>
+To: Colin King <colin.king@canonical.com>
+User-Agent: pwcli/0.0.0-git (https://github.com/kvalo/pwcli/) Python/2.7.12
+Message-Id: <20200126144044.314A3C4479F@smtp.codeaurora.org>
+Date: Sun, 26 Jan 2020 14:40:44 +0000 (UTC)
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20200122_165121_850141_3B73D34D 
-X-CRM114-Status: UNSURE (   8.87  )
+X-CRM114-CacheID: sfid-20200126_064050_947288_4CD5CB22 
+X-CRM114-Status: UNSURE (   6.22  )
 X-CRM114-Notice: Please train this message.
-X-Spam-Score: -5.0 (-----)
+X-Spam-Score: 0.0 (/)
 X-Spam-Report: SpamAssassin version 3.4.3 on bombadil.infradead.org summary:
- Content analysis details:   (-5.0 points)
+ Content analysis details:   (0.0 points)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
- high trust [91.189.89.112 listed in list.dnswl.org]
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [104.130.122.26 listed in list.dnswl.org]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
- [91.189.89.112 listed in wl.mailspike.net]
- 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
 X-BeenThere: wcn36xx@lists.infradead.org
 X-Mailman-Version: 2.1.29
 Precedence: list
@@ -64,37 +91,29 @@ List-Post: <mailto:wcn36xx@lists.infradead.org>
 List-Help: <mailto:wcn36xx-request@lists.infradead.org?subject=help>
 List-Subscribe: <http://lists.infradead.org/mailman/listinfo/wcn36xx>,
  <mailto:wcn36xx-request@lists.infradead.org?subject=subscribe>
-Cc: kernel-janitors@vger.kernel.org, linux-kernel@vger.kernel.org
+Cc: linux-wireless@vger.kernel.org, kernel-janitors@vger.kernel.org,
+ linux-kernel@vger.kernel.org, netdev@vger.kernel.org,
+ wcn36xx@lists.infradead.org, "David S . Miller" <davem@davemloft.net>
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Sender: "wcn36xx" <wcn36xx-bounces@lists.infradead.org>
 Errors-To: wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org
 
-From: Colin Ian King <colin.king@canonical.com>
+Colin King <colin.king@canonical.com> wrote:
 
-There is a spelling mistake in a wcn36xx_err message. Fix it.
+> There is a spelling mistake in a wcn36xx_err message. Fix it.
+> 
+> Signed-off-by: Colin Ian King <colin.king@canonical.com>
+> Signed-off-by: Kalle Valo <kvalo@codeaurora.org>
 
-Signed-off-by: Colin Ian King <colin.king@canonical.com>
----
- drivers/net/wireless/ath/wcn36xx/smd.c | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+Patch applied to ath-next branch of ath.git, thanks.
 
-diff --git a/drivers/net/wireless/ath/wcn36xx/smd.c b/drivers/net/wireless/ath/wcn36xx/smd.c
-index 523550f94a3f..77269ac7f352 100644
---- a/drivers/net/wireless/ath/wcn36xx/smd.c
-+++ b/drivers/net/wireless/ath/wcn36xx/smd.c
-@@ -1620,7 +1620,7 @@ int wcn36xx_smd_send_beacon(struct wcn36xx *wcn, struct ieee80211_vif *vif,
- 	msg_body.beacon_length6 = msg_body.beacon_length + 6;
- 
- 	if (msg_body.beacon_length > BEACON_TEMPLATE_SIZE) {
--		wcn36xx_err("Beacon is to big: beacon size=%d\n",
-+		wcn36xx_err("Beacon is too big: beacon size=%d\n",
- 			      msg_body.beacon_length);
- 		ret = -ENOMEM;
- 		goto out;
+d7809bd9eae6 wcn36xx: fix spelling mistake "to" -> "too"
+
 -- 
-2.24.0
+https://patchwork.kernel.org/patch/11346629/
 
+https://wireless.wiki.kernel.org/en/developers/documentation/submittingpatches
 
 _______________________________________________
 wcn36xx mailing list
