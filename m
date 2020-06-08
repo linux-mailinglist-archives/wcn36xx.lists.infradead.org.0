@@ -2,55 +2,55 @@ Return-Path: <wcn36xx-bounces+lists+wcn36xx=lfdr.de@lists.infradead.org>
 X-Original-To: lists+wcn36xx@lfdr.de
 Delivered-To: lists+wcn36xx@lfdr.de
 Received: from bombadil.infradead.org (bombadil.infradead.org [IPv6:2607:7c80:54:e::133])
-	by mail.lfdr.de (Postfix) with ESMTPS id 81EF11F23A4
-	for <lists+wcn36xx@lfdr.de>; Tue,  9 Jun 2020 01:17:25 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id A495E1F2684
+	for <lists+wcn36xx@lfdr.de>; Tue,  9 Jun 2020 01:45:01 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.infradead.org; s=bombadil.20170209; h=Sender:
 	Content-Transfer-Encoding:Content-Type:Cc:List-Subscribe:List-Help:List-Post:
 	List-Archive:List-Unsubscribe:List-Id:MIME-Version:References:In-Reply-To:
 	Message-Id:Date:Subject:To:From:Reply-To:Content-ID:Content-Description:
 	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
-	List-Owner; bh=eOATjCoAKC7slVuxzEo3xi9mIFkxPJYZO1i4MeDAsxM=; b=tDIgt7O7Ye+0eW
-	zzHsD9mREpkI+GTn5JnBCSzbmVQe7kj9GPLCUt9PSXp0zKQJ6/HBml9OCvwbT0qGmeX7jzOl2PjmT
-	4nuauzXRiLxEyQRZM3CQHiqemUB45SaM5w1JUkV92C7Rl6OkkqPoWw9quyJqLkndWyBRZGtpX/V5A
-	unLMI99ziVqo1J3U3tAXv3pAKV/8uHq46Z14N49IyedeEr9zD3yACdVeglcMSdoMH2E01ju7nbAT5
-	DwHMTmSjt2dQb0nsGT2fmL9Rx2VzHik5GCCZ9jUeWn56XgZKGS0hY7KitEmU3EdbSQ4VTwgwEOnmu
-	qCDNTctJk5dQYFzWzvkA==;
+	List-Owner; bh=FnoXHktMnbeehw39GK2Ijxi6OMXsjbCYS/kwo+vTS+o=; b=l+CnJgXziJ79bI
+	cLdUfJQapYRNYYHz8wwKf+G/cqllQbCqVhLaHU1BDcYqD5iIHd91X6aCqHnpcTFR8Y33HiPeIGKPg
+	uPrt3NyRH4rynIl31oCfpGJKq0dE/eGNceiyATv5taWAV/qEj6Hp4eBWYvP/3qLuGW59hhb5eZ1+w
+	2N5Vy3eWaAiuud52E/D7TTtjaDiV9Xjt30qub58YvYGBnqGJx/bVdidnR5u+/WrsDBfNA2KdSDU6d
+	At5Yhbl2uvwedusmYDS1DRqz16uVD8Yh3xh163l6UMU2OcbfrFbxxk4oEtZwBJmZPKYSJMiEb1GlG
+	GXCbNvkOAlxAZvy5whdg==;
 Received: from localhost ([127.0.0.1] helo=bombadil.infradead.org)
 	by bombadil.infradead.org with esmtp (Exim 4.92.3 #3 (Red Hat Linux))
-	id 1jiR0o-0003kL-GK; Mon, 08 Jun 2020 23:17:02 +0000
+	id 1jiRRh-0006pL-3y; Mon, 08 Jun 2020 23:44:49 +0000
 Received: from mail.kernel.org ([198.145.29.99])
  by bombadil.infradead.org with esmtps (Exim 4.92.3 #3 (Red Hat Linux))
- id 1jiQuC-0002S6-Jf
- for wcn36xx@lists.infradead.org; Mon, 08 Jun 2020 23:10:15 +0000
+ id 1jiR50-00019b-Is
+ for wcn36xx@lists.infradead.org; Mon, 08 Jun 2020 23:21:28 +0000
 Received: from sasha-vm.mshome.net (c-73-47-72-35.hsd1.nh.comcast.net
  [73.47.72.35])
  (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
  (No client certificate requested)
- by mail.kernel.org (Postfix) with ESMTPSA id D606F212CC;
- Mon,  8 Jun 2020 23:10:09 +0000 (UTC)
+ by mail.kernel.org (Postfix) with ESMTPSA id DE014208C9;
+ Mon,  8 Jun 2020 23:21:20 +0000 (UTC)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=kernel.org;
- s=default; t=1591657810;
- bh=x/hwxkdbdu7u6AazMGFK0CvTxvW1mE8KvYKMVZZL0Dk=;
+ s=default; t=1591658481;
+ bh=CarzX7jrFj2dLReUZB4e6YJK8BhpEudbGb6UOINdud4=;
  h=From:To:Cc:Subject:Date:In-Reply-To:References:From;
- b=m32/6Wi/6okH5IZyKqQGHump6D6bBohhmYDxRFoQGzIkkwGWPupHta7f6dqzPvRUy
- rBlE/YMk0KH6gwz0c1UrjUpWRsAkFbZ7/qU2HyrL0LvLFdIV9TGjs2SrSGF+KOyWDI
- 7aBIehQRLSNTTeV+Z0n2usHRbc7YQukK+aEidUsU=
+ b=ulmOF4UpHUzAUjgoU1B0h1CkNqmzHZFvLxYVi+2f54LlxC5FOcRB/1mAK5aU0J0qp
+ hNESV/gyvUQLPmgkzIRYB8Zvzch3QDv6/1/Y+C11nmp+UHFu256FjpCG8xoZM9wm92
+ vaCNizWZJx1MHzwVolxUp2tInYZn3RUctvXiEQuY=
 From: Sasha Levin <sashal@kernel.org>
 To: linux-kernel@vger.kernel.org,
 	stable@vger.kernel.org
-Subject: [PATCH AUTOSEL 5.7 186/274] wcn36xx: Fix error handling path in
+Subject: [PATCH AUTOSEL 5.4 117/175] wcn36xx: Fix error handling path in
  'wcn36xx_probe()'
-Date: Mon,  8 Jun 2020 19:04:39 -0400
-Message-Id: <20200608230607.3361041-186-sashal@kernel.org>
+Date: Mon,  8 Jun 2020 19:17:50 -0400
+Message-Id: <20200608231848.3366970-117-sashal@kernel.org>
 X-Mailer: git-send-email 2.25.1
-In-Reply-To: <20200608230607.3361041-1-sashal@kernel.org>
-References: <20200608230607.3361041-1-sashal@kernel.org>
+In-Reply-To: <20200608231848.3366970-1-sashal@kernel.org>
+References: <20200608231848.3366970-1-sashal@kernel.org>
 MIME-Version: 1.0
 X-stable: review
 X-Patchwork-Hint: Ignore
 X-CRM114-Version: 20100106-BlameMichelson ( TRE 0.8.0 (BSD) ) MR-646709E3 
-X-CRM114-CacheID: sfid-20200608_161012_843308_C07B61C1 
+X-CRM114-CacheID: sfid-20200608_162122_647033_6AA2FA12 
 X-CRM114-Status: GOOD (  12.69  )
 X-Spam-Score: -5.2 (-----)
 X-Spam-Report: SpamAssassin version 3.4.4 on bombadil.infradead.org summary:
@@ -107,10 +107,10 @@ Signed-off-by: Sasha Levin <sashal@kernel.org>
  1 file changed, 4 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/net/wireless/ath/wcn36xx/main.c b/drivers/net/wireless/ath/wcn36xx/main.c
-index e49c306e0eef..702b689c06df 100644
+index 79998a3ddb7a..ad051f34e65b 100644
 --- a/drivers/net/wireless/ath/wcn36xx/main.c
 +++ b/drivers/net/wireless/ath/wcn36xx/main.c
-@@ -1339,7 +1339,7 @@ static int wcn36xx_probe(struct platform_device *pdev)
+@@ -1341,7 +1341,7 @@ static int wcn36xx_probe(struct platform_device *pdev)
  	if (addr && ret != ETH_ALEN) {
  		wcn36xx_err("invalid local-mac-address\n");
  		ret = -EINVAL;
@@ -119,7 +119,7 @@ index e49c306e0eef..702b689c06df 100644
  	} else if (addr) {
  		wcn36xx_info("mac address: %pM\n", addr);
  		SET_IEEE80211_PERM_ADDR(wcn->hw, addr);
-@@ -1347,7 +1347,7 @@ static int wcn36xx_probe(struct platform_device *pdev)
+@@ -1349,7 +1349,7 @@ static int wcn36xx_probe(struct platform_device *pdev)
  
  	ret = wcn36xx_platform_get_resources(wcn, pdev);
  	if (ret)
@@ -128,7 +128,7 @@ index e49c306e0eef..702b689c06df 100644
  
  	wcn36xx_init_ieee80211(wcn);
  	ret = ieee80211_register_hw(wcn->hw);
-@@ -1359,6 +1359,8 @@ static int wcn36xx_probe(struct platform_device *pdev)
+@@ -1361,6 +1361,8 @@ static int wcn36xx_probe(struct platform_device *pdev)
  out_unmap:
  	iounmap(wcn->ccu_base);
  	iounmap(wcn->dxe_base);
